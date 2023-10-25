@@ -5,6 +5,13 @@ terraform {
       "source" = "hashicorp/azurerm"
       version  = "3.43.0"
     }
+    cloud {
+    organization = "beeops"
+
+    workspaces {
+      name = "TerraformCI"
+    }
+  }
   }
 }
 
