@@ -6,13 +6,6 @@ terraform {
       version  = "3.43.0"
     }
   }
-  cloud {
-    organization = "beeops"
-
-    workspaces {
-      name = "TerraformCI"
-    }
-  }
 }
 
 provider "azurerm" {
